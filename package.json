@@ -1,0 +1,7 @@
+{
+	"dependencies": {
+		"js-yaml": "^4.1.0",
+		"just-diff": "^5.1.1",
+		"just-diff-apply": "^5.4.1"
+	}
+}
