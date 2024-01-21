@@ -2,23 +2,31 @@
   "name": "yaml-diff",
   "version": "0.0.1",
   "scripts": {
-    "package": "pkg ."
+    "clean": "rm -rf ./dist && rm -rf ./bin",
+    "build": "tsc && pkg ."
   },
-  "bin": "src/main.js",
+  "bin": "./dist/main.js",
   "pkg": {
     "output": "yaml-diff",
-    "outputPath": "bin",
+    "outputPath": "./bin",
     "targets": [
-      "node16-win-x64",
-      "node16-linux-x64"
+      "node18-win-x64",
+      "node18-win-arm64",
+      "node18-linux-x64",
+      "node18-linux-arm64",
+      "node18-macos-x64",
+      "node18-macos-arm64"
     ]
   },
   "dependencies": {
     "js-yaml": "^4.1.0",
-    "just-diff": "^5.1.1",
-    "just-diff-apply": "^5.4.1"
+    "just-diff": "^5.2.0",
+    "just-diff-apply": "^5.5.0"
   },
   "devDependencies": {
-    "pkg": "^5.8.0"
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^v18.19.0",
+    "pkg": "^5.8.0",
+    "typescript": "^5.3.3"
   }
 }

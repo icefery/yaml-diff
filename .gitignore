@@ -1,15 +1,19 @@
-### IDE
-.idea/
-.vscode/
+### macos
+/**/.DS_Store
 
-### NPM
+### idea
+/**/.idea/
 
-node_modules/
-package-lock.json
-pnpm-lock.yaml
+### vscode
+/**/.vscode/
 
-### BUILD
+### npm
+/**/node_modules/
+/**/package-lock.json
+/**/yarn.lock
+/**/yarn-*.log
+/**/pnpm-*.yaml
+
+### yaml-dff
+dist/
 bin/
-
-### TEST
-*.yaml
